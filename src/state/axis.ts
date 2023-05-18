@@ -1,4 +1,4 @@
-import type { HorizontalAxis, VerticalAxis } from '../types';
+import type { HorizontalAxis, VerticalAxis, GridAxis } from '../types';
 
 export const vertical: VerticalAxis = {
   direction: 'vertical',
@@ -10,10 +10,25 @@ export const vertical: VerticalAxis = {
   crossAxisStart: 'left',
   crossAxisEnd: 'right',
   crossAxisSize: 'width',
+  grid: false,
 };
 
 export const horizontal: HorizontalAxis = {
   direction: 'horizontal',
+  line: 'x',
+  crossAxisLine: 'y',
+  start: 'left',
+  end: 'right',
+  size: 'width',
+  crossAxisStart: 'top',
+  crossAxisEnd: 'bottom',
+  crossAxisSize: 'height',
+  grid: false,
+};
+
+export const grid: GridAxis = {
+  direction: 'horizontal',
+  grid: true,
   line: 'x',
   crossAxisLine: 'y',
   start: 'left',
