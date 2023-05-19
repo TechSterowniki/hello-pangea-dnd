@@ -44,7 +44,7 @@
   "scripts": {
     "commit": "cz",
     "chromatic": "chromatic --project-token=f92123f238de",
-    "prepare": "pnpm build && husky install",
+    "prepare": "husky install",
     "release": "release-it",
     "release:test": "release-it --dry-run",
     "test:accessibility": "lighthouse http://localhost:9002/iframe.html?id=examples-single-vertical-list--basic --no-enable-error-reporting --config-path=lighthouse.config.js --chrome-flags='--headless' --output=json --output=html --output-path=./test-reports/lighthouse/a11y.json && node a11y-audit-parse.js",
